@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Narutodle s2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 class="logo">Narutodle</h1>
+<p><b>Acerte o personagem de Naruto!</b></p>
+
+<div class="image-container">
+<img id="silhouette" src="" width="250">
+</div>
+
+<br><br>
+
+<div class="autocomplete">
+
+<input type="text" id="guessInput" placeholder="Digite o personagem" autocomplete="off">
+
+<div id="suggestions"></div>
+
+</div>
+
+<button id="guessBtn" onclick="submitGuess()">Adivinhar</button>
+
+<br><br>
+<div id="message"></div>
+
+<button id="restartBtn" onclick="restartGame()" style="display:none;">
+Restart Game
+</button>
+
+<h2>
+Tentativas 
+<span class="help-icon">?</span>
+
+<div class="tooltip">
+<b>Gênero</b> → masculino ou feminino<br>
+<b>Vila</b> → vila de origem do personagem<br>
+<b>Jutsu</b> → estilo de luta do personagem<br>
+<b>Elementos</b> → afinidades elementais<br>
+Nome do elemento → elemento em comum
+</div>
+
+</h2>
+
+<div class="guess-header">
+<span></span>
+<span>Genero</span>
+<span>Vila</span>
+<span>Jutsu</span>
+<span>Elementos</span>
+</div>
+
+
+<div id="results"></div>
+
+</div>
+
+<script src="characters.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+<div class="image-container">
+<img id="silhouette" src="">
+</div>
